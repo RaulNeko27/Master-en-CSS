@@ -1,0 +1,158 @@
+<!DOCTYPE HTML> <!--versión de html-->
+
+<html lang="es"> <!--idioma de la página-->
+
+     <head>
+        <title> Mi primera web </title>
+     </head>
+
+     <body>
+
+     	<h1>Titulo de mi página</h1>
+     	<h2>Bienvenidos a mi web</h2>
+     	<p>
+     	¿Qué es Lorem Ipsum?<br>
+     	Lorem Ipsum es simplemente un texto ficticio de la industria de la impresión y la composición tipográfica. <br>Lorem Ipsum ha sido el texto ficticio estándar de la industria desde el año 1500, cuando un impresor desconocido tomó una galera de tipos y la codificó para hacer un libro de muestras tipográficas. 
+     </p>
+     	<p>
+     	Ha sobrevivido no solo cinco siglos, sino también el salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. <br>Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker, que incluía versiones de Lorem Ipsum
+     </p>
+
+     <hr>
+          <h2>Imagenes en HTML</h2>
+
+          <img src="fotos/Luxemburgo.jpeg" alt="Luxemburgo" title="Luxemburgo" width="300px" />
+
+          <img src="fotos/PlazaCastilla.jpeg" alt="Plaza Castilla" title="Plaza  Castilla" width="300px" />
+     <hr>
+
+
+     <h3> Tercer encabezado de la página </h3>
+
+     <p>
+     	Contrariamente a la creencia popular, <strong><!--Remarca en negrita el strong-->Lorem Ipsum no es simplemente un texto aleatorio. Tiene sus raíces en una pieza de la literatura latina clásica del 45 a. C., por lo que tiene más de 2000 años. </strong>
+
+     	 Richard McClintock, profesor de latín en 
+     	<em><!--Se hace cursiva las letras con em-->Hampden-Sydney</em>
+
+     	 <span id="resaltado" class="red">College en Virginia, buscó una de las palabras latinas más oscuras, consectetur, en un pasaje de Lorem Ipsum, y al revisar las citas de la palabra en la literatura clásica, descubrió la fsuente indudable.</span>
+
+     	 <blockquote> <!--sirve par citar un texto, parrafo en específico-->
+
+     	 Lorem Ipsum proviene de las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" (Los extremos del bien y del mal) de Cicerón, escrito en el 45 a. Este libro es un tratado de teoría de la ética, muy popular durante el Renacimiento. La primera línea de Lorem Ipsum, "Lorem ipsum dolor sit amet..", proviene de una línea en la sección 1.10.32
+     	</blockquote>
+
+     </p>
+
+     <br><br><hr>
+
+     <h3>Formulario</h3>
+
+     <form> <!--sirve para crear formulario a rellenar-->
+
+     <p>
+     	<label for="nombre">Nombre</label>
+
+     <!-- el imput es para poner un campo y así poder rellenarlo-->
+     <!-- el placeholder es el texto  que nos aparcerá por defecto para asesorar en el tipo de campo-->
+
+     	<input type="text" name="nombre" placeholder="Escribe tu nombre..."/>
+    </p>
+
+
+    <p>
+    
+    <!--el textarea name es para hacerel tipo de formulario, en este caso es para descripción-->
+     	<label for="descripcion">Descripción</label>
+     	<textarea name="descripcion" placeholder="Era se una vez una rata inmunda, asqueada por la sociedad y luchadora donde las haya..."></textarea>
+    </p>
+
+    <p>
+
+    <h4><label for="nombre">Elige tu genero</label></h4>
+
+    	<input type="radio" name="genero" value="hombre">Hombre
+    <br>
+        <input type="radio" name="genero" value="mujer">Mujer
+    <br>
+        <input type="radio" name="genero" value="no binario">No Binario
+    <br><br>
+
+    <select name="elige">
+    	<option value="masculino">Masculino</option>
+    	<option value="femenino">Femenino</option>
+    	<option value="agenero">Agenero</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Enviar formulario">
+
+     </form>
+
+     <br><br><hr>
+
+     <h3>Listado de frutas</h3>
+
+     <ul>
+    
+
+    <!--Listado desordenado (por puntos)-->
+     	<li>Manzana</li>
+               <ul>
+      	          <li>Roja</li>
+      	          <li>Verde</li>
+              </ul>
+
+     	<li>Naranja</li>
+     	<li>Pera</li>
+     	<li>Sandia</li>
+
+     </ul>
+
+     <h3>Numeración Alfanumerica</h3>
+
+     <ol>
+
+     <!--listado ordenado numericamente-->
+     	<li>primero</li>
+     	<li>segundo</li>
+     	<li>tercero</li>
+     </ol>
+
+     <br><hr>
+
+     <h3>Tablas</h3>
+
+     <table border="1">
+     	<!--el border sirve para que se vea las lineas de la tabla-->
+     	<tr> <!--tr son las columnas de la tabla-->
+
+     	<!--th sive para recalcar en negrita las palabras de la celda correspodiente-->
+     		<th>Nombre</th>
+     		<th>1ºApellido</th>
+     		<th>2ºApellido</th>
+     		<th>Pais</th>
+     	</tr>
+     	<tr>
+
+     	<!--td son las celdas de la tabla-->
+     		<td>Raúl</td>
+     		<td colspan="2">Navarro Alonso</td>
+     		<td>España</td>
+     	</tr>
+     	<tr>
+     		<td>Laura</td>
+     		<td colspan="2"><!--el Colspan sirve para combinar celdas, a partir del numero asignado de celda-->
+     		Navarro Gómez</td>
+     		<td>Alemania</td>
+     	</tr>
+     </table>
+
+
+
+     </body>
+
+
+
+</html>
