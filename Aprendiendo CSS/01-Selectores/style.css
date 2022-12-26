@@ -1,0 +1,185 @@
+/* En CSS siempre va a dectectar el código fuente del último al primero, pero si es el caso del selector universal directamente se quedará así por defecto
+El selector ID solo servirá para un etiquetado en específico. No todos a montones.
+El selector de clase sirve para poner tantos como quieras del etiquetado.
+El selector de atributo lo que hace es seleccionar etiquetado del html según los atributos que le acompañen
+Lo que hace el elemento hijo es vincular según orden de etiquetado, la etiqueta en especifico que se quiera modificar de esa estructura
+El selector de prioridad se basa en dar la prioridad aquel que este más arriba para abajo en el código fuente El etiquetado más especifico es el que gana para salir en la página Esta regla se rompe, si al etiquetado se le pone important. Que es lo que el CSS le dará más relevancia*/
+
+
+/*##### SELECTORES ########*/
+
+
+/*Selector universal*/
+
+/*El selector universal es el selector por defecto, para todo*/
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1{
+    background-color: aquamarine;
+    color: white;
+    padding: 10px;
+}
+
+/*El text-decoration None lo que hace es que no le ponga ningún tipo de decoración al enlace*/
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+footer a{
+    color: brown;
+}
+
+
+
+
+
+/*Selector de id*/
+
+/*El selector ID solo servirá para un etiquetado en específico. No todos a montones.*/
+
+#descripcion,
+#titulo
+{
+    border: 5px solid black;
+    padding: 15px;
+}
+
+
+#titulo{
+    font-size: 30px;
+    color: cadetblue;
+    border: 2px dashed olivedrab;
+}
+
+
+
+
+/*Selector de clase*/
+
+/*El selector de clase sirve para poner tantos como quieras del etiquetado.*/
+
+.parrafo1{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.parrafo2{
+    background-color: bisque;
+    color: rgb(50, 143, 143);
+    padding: 10px;
+}
+
+.parrafo3{
+    font-size: 20px;
+    font-family: monospace;
+    border: 2px dashed maroon;
+}
+
+
+
+
+/*Selector de atributo*/
+
+/*El selector atributo lo que hace es seleccionar etiquetado del html según los atributos que le acompañen*/
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+/*El display: block lo que hace es que cada elemento este en una línea para el solo.
+Se comporta como un bloque*/
+
+#usuario form *{
+    display: block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+/*El text-transform lo que hace es cambiar la letra de Mayuscula a Minuscula y viceversa
+El uppercase lo deja en Mayuscula
+El cursor pointer hace que cuando pases por el input submit aparezca un cursor*/
+
+input[type="submit"]{
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+
+
+
+/* Selector de hijo*/
+
+/*Lo que hace el elemento hijo es vincular según orden de etiquetado, la etiqueta en especifico que se quiera modificar de esa estructura*/
+
+#menu > li > ul > li > a{
+    font-size: 15px;
+    color: rgb(245, 4, 4);
+    text-decoration: none;
+}
+
+
+
+
+/*Selector de PRIORIDAD*/
+
+/*El selector de prioridad se basa en dar la prioridad aquel que este más abajo en el código fuente
+El etiquetado más especifico es el que gana para salir en la página
+Esta regla se rompe, si al etiquetado se le pone important. Que es lo que el CSS le dará más relevancia*/
+
+/*2*/#saludo h1{
+    background: brown;
+}
+
+/*3*/h1{
+    background: antiquewhite;
+    font-size: 15px;
+}
+
+/*1*/#saludo h1{
+    background: royalblue !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Ejemplo práctico CSS (nada que ver con los selectores
+
+body{
+    background: rgb(216, 199, 199);
+}
+
+h1{
+    color: red;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px black;
+    text-decoration: underline;
+}
+*/
